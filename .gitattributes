@@ -1,0 +1,48 @@
+# Global git attributes
+# ---------------------
+* text=auto eol=lf
+
+# Source Code
+# -----------
+*.swift text diff=swift
+*.m text
+*.h text
+*.c text
+*.cpp text
+
+# Configuration & Data files
+# --------------------------
+*.json text
+*.plist text
+*.xml text
+*.xcsettings text
+*.xcscheme text
+*.xcworkspacedata text
+*.strings text
+*.stringsdict text
+
+# Markup files
+# ------------
+*.md text
+*.markdown text
+*.txt text
+
+# Binaries & Media assets
+# ------------------------
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.wav binary
+*.icns binary
+*.xcassets/ binary
+*.appiconset/ binary
+*.imageset/ binary
+*.car binary
+*.framework/ binary
+*.a binary
+*.dylib binary
