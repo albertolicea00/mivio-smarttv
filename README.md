@@ -9,12 +9,14 @@ Whether scanning local network shares via **SMB** or streaming over a secure clo
 
 ---
 
-## 🎨 Platform-Specific Experience Goals
+## 🎨 Platform Features & Limitations
 
-Mivio Smart TV is explicitly designed for the "10-foot UI" paradigm, where the user interacts via a simple D-pad remote:
+Mivio Smart TV is explicitly designed for the "10-foot UI" paradigm, tailored specifically to the capabilities of Samsung Tizen and LG webOS:
 
-- **Samsung Tizen & LG webOS**: High-contrast poster grids, large typography, spatial navigation (D-pad), parallax hover states on focused cards, and deep integration with native TV media player APIs for hardware-accelerated video decoding.
-- **Cinematic Feel**: Immersive backdrops, fluid focus transitions, and minimal distractions.
+- ✅ **USB Read-Only**: You can play local files from USB drives, but metadata writing is not supported on these platforms.
+- ✅ **Home Server Client**: Stream directly from your home servers (Plex, Jellyfin) consuming metadata directly from the server.
+- ✅ **Native TV Player**: Seamless, hardware-accelerated video decoding using the native Tizen/webOS media APIs.
+- ❌ **No Local Multi-Account**: Profiles and watch states are managed entirely by your home server.
 
 ---
 
