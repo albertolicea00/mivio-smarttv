@@ -1,21 +1,133 @@
-MIT License
+# Mivio Source-Available End User License Agreement (EULA)
 
-Copyright (c) 2026 Alberto Licea
+Copyright (c) 2026 Alberto Licea. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Acceptance
+In order to get any license under these terms, you must agree to them as both 
+strict obligations and conditions to all your licenses.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## Copyright License
+The licensor grants you a copyright license for the software to do everything 
+you might do with the software that would otherwise infringe the licensor's 
+copyright in it for any permitted purpose. However, you may only distribute 
+the software according to [Distribution License](#distribution-license) and 
+make changes or new works based on the software according to [Changes and 
+New Works License](#changes-and-new-works-license).
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## Distribution License
+The licensor grants you an additional copyright license to distribute copies 
+of the software or its source code. Your license to distribute covers 
+distributing the software with changes and new works permitted by [Changes 
+and New Works License](#changes-and-new-works-license), subject to the 
+following strict conditions:
+1. The distribution must be offered entirely free of charge (no download fees, 
+   no paywalls, no required donations).
+2. The distributed software must not contain any form of monetization, including 
+   but not limited to third-party advertisements, premium unlocks, or paid subscriptions.
+3. The distribution must remain under the original "Mivio" name and branding.
+
+## Notices & Attribution
+You must ensure that anyone who gets a copy of any part of the software or 
+its source code from you also gets a copy of these terms. You must retain 
+the original copyright notice in all files: 
+> Required Notice: Copyright (c) 2026 Alberto Licea (https://github.com/albertolicea00/mivio-smarttv)
+
+## Changes and New Works License
+The licensor grants you an additional copyright license to make changes and 
+new works based on the software's source code for any permitted purpose. All 
+derivative works and modifications automatically inherit these exact terms and 
+cannot be licensed under any other license (including GPL, MIT, or Apache).
+
+## Strict Branding, Rebranding & Trademark Restrictions
+This license DOES NOT grant you any rights to use the trademarks, logos, 
+or trade names of the licensor. You are strictly prohibited from rebranding, 
+renaming, altering the logos, changing the UI themes/identifying assets, 
+or modifying the user interface branding of the software or any derivative 
+works to distribute, host, market, or showcase it as a separate or standalone 
+product under any name other than "Mivio".
+
+## Commercial Licensing, SaaS, & White-Labeling
+Any use of the software, its source code, or derivative works for commercial 
+purposes, business operations, monetary gain, or institutional deployment is 
+strictly prohibited. 
+
+For the avoidance of doubt, non-permitted commercial purposes include, but 
+are not limited to:
+a) Hosting or running the software as a cloud service, streaming platform, 
+   or Software-as-a-Service (SaaS) where third parties access it commercially.
+b) Using the software to provide media streaming services for monetary compensation.
+c) Modifying and compiling the software for commercial rebranding ("white-labeling") 
+   to sell or lease to third-party businesses.
+
+If you wish to engage in any of these activities, you must obtain a separate, 
+written Commercial License by contacting the licensor directly.
+
+## API Keys & Third-Party Services
+This license grants no rights, permissions, or access to any proprietary API keys, 
+metadata service credentials, or third-party service tokens utilized by the licensor 
+in the official binaries of Mivio. You must provide your own API keys for any 
+compiled or derivative versions of the software.
+
+## Patent License
+The licensor grants you a patent license for the software that covers patent 
+claims the licensor can license, or becomes able to license, that you would 
+infringe by using the software.
+
+## Permitted Noncommercial Purposes
+Any noncommercial purpose is a permitted purpose. Personal use for private 
+entertainment (such as personal media streaming, playback, and library management), 
+home-lab hobby projects, research, experiment, and testing, without any 
+anticipated commercial application, is use for a permitted purpose.
+
+## Noncommercial Organizations
+Use by any charitable organization, educational institution, public research 
+organization, public safety or health organization, environmental protection 
+organization, or government institution is use for a permitted purpose regardless 
+of the source of funding or obligations resulting from the funding.
+
+## Fair Use
+You may have "fair use" rights for the software under the law. These terms 
+do not limit them.
+
+## No Other Rights
+These terms do not allow you to sublicense or transfer any of your licenses 
+to anyone else, or prevent the licensor from granting licenses to anyone else. 
+These terms do not imply any other licenses.
+
+## Patent Defense
+If you make any written claim that the software infringes or contributes to 
+infringement of any patent, your patent license for the software granted 
+under these terms ends immediately. If your company makes such a claim, your 
+patent license ends immediately for work on behalf of your company.
+
+## Violations
+The first time you are notified in writing that you have violated any of 
+these terms, or done anything with the software not covered by your licenses, 
+your licenses can nonetheless continue if you come into full compliance 
+with these terms, and take practical steps to correct past violations, 
+within 32 days of receiving notice. Otherwise, all your licenses end immediately.
+
+## No Liability
+***As far as the law allows, the software comes as is, without any warranty 
+or condition, and the licensor will not be liable to you for any damages 
+arising out of these terms or the use or nature of the software, under 
+any kind of legal claim.***
+
+## Definitions
+The **licensor** is Alberto Licea, and the **software** is the software 
+(including its source code and compiled binaries) the licensor makes available 
+under these terms.
+
+**You** refers to the individual or entity agreeing to these terms.
+
+**Your company** is any legal entity, sole proprietorship, or other kind 
+of organization that you work for, plus all organizations that have control 
+over, are under the control of, or are under common control with that 
+organization. **Control** means ownership of substantially all the assets 
+of an entity, or the power to direct its management and policies by vote, 
+contract, or otherwise. Control can be direct or indirect.
+
+**Your licenses** are all the licenses granted to you for the software under 
+these terms.
+
+**Use** means anything you do with the software requiring one of your licenses.

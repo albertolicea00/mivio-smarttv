@@ -1,6 +1,6 @@
 # 🍿 Mivio for Smart TV (Tizen & webOS)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![License: Non-Commercial](https://img.shields.io/badge/License-Non_Commercial-red.svg?style=flat-square)](LICENSE)
 [![Platform Compatibility](https://img.shields.io/badge/Platforms-Tizen%20%7C%20webOS-brightgreen.svg?style=flat-square)](#platform-specific-goals)
 
 **Mivio** is a premium, high-performance media management and playback application tailored for modern Smart TVs (Samsung Tizen and LG webOS). Designed for large-screen cinematic experiences, Mivio leverages web technologies optimized for TV hardware to deliver an elegant, fast, and responsive media cataloging and streaming experience.
@@ -63,4 +63,4 @@ For vulnerability reporting or security-related matters, see [SECURITY.md](SECUR
 ---
 
 ## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Mivio Source-Available End User License Agreement (EULA)**. Commercial use, monetization, and unauthorized redistribution are strictly prohibited. See the [LICENSE](LICENSE) file for details.
