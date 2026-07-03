@@ -8,6 +8,8 @@ yarn-debug.log
 
 # Build and deployment outputs
 dist/
+dist-tizen/
+dist-webos/
 build/
 out/
 
