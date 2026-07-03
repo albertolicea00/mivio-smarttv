@@ -1,0 +1,528 @@
+/* Mivio Smart TV — dark cinematic 10-foot UI theme.
+   Designed at 1920x1080; large targets, strong focus states,
+   overscan-safe margins on every screen. */
+
+:root {
+  --bg: #0a0c12;
+  --bg-elev: #161a26;
+  --bg-input: #1d2230;
+  --text: #f2f4f8;
+  --text-dim: #9aa3b4;
+  --accent: #f78f1e; /* Mivio brand orange (from the official logo). */
+  --accent-soft: rgba(247, 143, 30, 0.35);
+  --danger: #ff6b6b;
+  --radius: 14px;
+  /* TV overscan safe area (~3% of 1080p). */
+  --safe-y: 42px;
+  --safe-x: 64px;
+  --focus-ring: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', 'LG Smart UI', 'SamsungOneUI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+  cursor: none; /* Pointer is hidden in the 10-foot UI (webOS Magic Remote still clicks). */
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* ---- Screens ------------------------------------------------------------- */
+
+.screen {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: var(--safe-y) var(--safe-x);
+  background-color: var(--bg);
+  background-size: cover;
+  background-position: center;
+}
+
+.screen-hidden {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.status {
+  color: var(--text-dim);
+  padding: 24px 0;
+}
+
+/* ---- Focus ----------------------------------------------------------------- */
+
+.focusable {
+  outline: none;
+}
+
+.focusable:focus {
+  outline: var(--focus-ring) solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---- Brand / top bar ------------------------------------------------------- */
+
+.brand {
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(120deg, #ffb35c, var(--accent) 55%, #f1582a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-small {
+  font-size: 40px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.topbar-user {
+  color: var(--text-dim);
+}
+
+/* ---- Buttons ---------------------------------------------------------------- */
+
+.btn {
+  font: inherit;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg-elev);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 16px 44px;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:focus {
+  transform: scale(1.06);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #1a1006;
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.25);
+  font-size: 22px;
+  padding: 10px 28px;
+}
+
+.btn[disabled] {
+  opacity: 0.6;
+}
+
+/* ---- Connect screen --------------------------------------------------------- */
+
+.screen-connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(247, 143, 30, 0.16), transparent 60%),
+    radial-gradient(900px 500px at 10% 110%, rgba(241, 88, 42, 0.12), transparent 60%),
+    var(--bg);
+}
+
+.connect-panel {
+  width: 720px;
+  max-width: 90%;
+  background: rgba(22, 26, 38, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  padding: 56px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.connect-subtitle {
+  color: var(--text-dim);
+  font-size: 22px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field-label {
+  font-size: 20px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.input {
+  font: inherit;
+  font-size: 26px;
+  color: var(--text);
+  background: var(--bg-input);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+}
+
+.input:focus {
+  border-color: var(--accent);
+  outline: var(--focus-ring) solid var(--accent-soft);
+}
+
+.form-error {
+  color: var(--danger);
+  font-size: 22px;
+  min-height: 1.4em;
+}
+
+.connect-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ---- Home rows ---------------------------------------------------------------- */
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+.row-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.row-scroller {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  /* Breathing room so scaled/focused cards are not clipped. */
+  padding: 14px 8px 22px;
+  scrollbar-width: none;
+}
+
+.row-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---- Cards ---------------------------------------------------------------------- */
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  transition: transform 0.15s ease;
+}
+
+.card:focus {
+  transform: scale(1.08);
+  outline: none;
+}
+
+.card:focus .card-poster {
+  outline: var(--focus-ring) solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card-poster {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  overflow: hidden;
+}
+
+.card-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-poster-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 22px;
+  overflow: hidden;
+}
+
+.card-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.card-progress-fill {
+  height: 100%;
+  background: var(--accent);
+}
+
+.card-title {
+  margin-top: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-subtitle {
+  font-size: 19px;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- Detail screen ----------------------------------------------------------------- */
+
+.screen-detail {
+  background-color: var(--bg);
+}
+
+.detail-hero {
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.detail-poster {
+  position: relative;
+  flex: 0 0 340px;
+  aspect-ratio: 2 / 3;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--bg-elev);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.detail-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 12px;
+}
+
+.detail-title {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.detail-meta {
+  color: var(--text-dim);
+  font-size: 24px;
+}
+
+.detail-overview {
+  max-width: 1100px;
+  color: var(--text);
+  font-size: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+/* ---- Player ---------------------------------------------------------------------------- */
+
+.screen-player {
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+.player-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.player-error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(20, 12, 12, 0.9);
+  border: 1px solid var(--danger);
+  color: var(--text);
+  padding: 32px 48px;
+  border-radius: var(--radius);
+  max-width: 60%;
+  text-align: center;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 72px;
+  height: 72px;
+  margin: -36px 0 0 -36px;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* On-screen display (title + progress), overscan-safe. */
+.osd {
+  position: absolute;
+  inset: 0;
+  padding: var(--safe-y) var(--safe-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), transparent 25%, transparent 70%, rgba(0, 0, 0, 0.75));
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.osd-visible {
+  opacity: 1;
+}
+
+.osd-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+.osd-bottom {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.osd-time {
+  font-size: 24px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.osd-progress {
+  flex: 1;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+
+.osd-progress-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.osd-state {
+  position: absolute;
+  right: var(--safe-x);
+  top: var(--safe-y);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+/* ---- 720p TVs (some webOS panels render at 1280x720) ---------------------------- */
+
+@media (max-width: 1300px) {
+  :root {
+    --safe-y: 28px;
+    --safe-x: 44px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 150px;
+  }
+
+  .detail-title {
+    font-size: 40px;
+  }
+
+  .detail-poster {
+    flex-basis: 250px;
+  }
+}
