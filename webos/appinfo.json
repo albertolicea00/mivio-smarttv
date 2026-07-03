@@ -1,0 +1,17 @@
+{
+  "id": "app.mivio.smarttv",
+  "version": "0.1.0",
+  "vendor": "Mivio",
+  "type": "web",
+  "main": "index.html",
+  "title": "Mivio",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "splashBackground": "splash.png",
+  "bgColor": "#151515",
+  "iconColor": "#151515",
+  "resolution": "1920x1080",
+  "disableBackHistoryAPI": true,
+  "handlesRelaunch": false,
+  "requiredPermissions": ["time.query", "activity.operation"]
+}
