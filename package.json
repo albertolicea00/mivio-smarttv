@@ -1,0 +1,23 @@
+{
+  "name": "mivio-smarttv",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Mivio media client for Samsung Tizen and LG webOS Smart TVs",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "build:tizen": "npm run build && node scripts/package.mjs tizen",
+    "build:webos": "npm run build && node scripts/package.mjs webos",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.8"
+  }
+}
